@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>
+  <title>Translation Database</title>
+</head>
+
+<h1>Welcome to Translation Database</h1>
+<h2>Supported Languages</h2>
+
+<ul>
+{% for language in languages %}
+  <li>{{ language.title }} - <span>Year Added:</span> {{ language.year }}</li>
+{% endfor %}
+</ul>
